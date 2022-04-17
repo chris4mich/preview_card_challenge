@@ -1,0 +1,233 @@
+/* fonts 
+font-family: 'Goldman', cursive;
+font-family: 'Iceberg', cursive;
+font-family: 'Outfit', sans-serif; */
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: hsl(217, 54%, 11%);
+  }
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  display: block;
+  margin: 8rem 40%;
+  height: 41.5rem;
+  width: 25rem;
+  border-radius: 16px;
+  box-shadow: 0px 10px 50px hsl(215, 55%, 6%);
+}
+
+.image-boarder {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 22px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.image-equilibrium {
+  border-radius: 16px;
+  width: 22rem ;
+}
+
+.eye-icon {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  padding-bottom: 10px;
+  width: 55px;
+    height: 65px;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 353px;
+  height: 352px;
+  margin-left: 24px;
+  margin-top: 22px;
+  background: rgba(0, 255, 247, 0.6);
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.image__overlay > * {
+  transition: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 10em;
+  font-weight: bold;
+}
+
+
+.title-boarder {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 22px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  text-align: left;
+}
+
+
+ h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+   color: white;
+ }
+
+ h1:hover {
+   color: rgb(0, 255, 247);
+   cursor: pointer;
+ }
+
+.main-text {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  text-align: left;
+ }
+
+ h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+   color: hsl(215, 51%, 70%);
+ }
+
+.balance-boarder {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 22px;
+  padding-top: 0;
+  padding-bottom: 30px;
+  text-align: left;
+  position: relative;
+  vertical-align: baseline;
+ }
+
+.etherium-icon {
+   width: 10px;
+   margin-right: 5px;
+   vertical-align: -2px;
+ }
+
+ .balance-text {
+  vertical-align: text-top;
+  font-family: 'Outfit', sans-serif;
+  font-size: 17px;
+  color: hsl(178, 100%, 50%);
+  float: left;
+  }
+
+.clock-icon {
+  vertical-align: -5px;
+  width: 21px;
+  margin-right: 4px;
+  position: relative;
+  text-align: right;
+}
+
+.clock-text {
+  font-size: 17px;
+  text-align: right;
+  float: right;
+}
+
+hr {
+  border-color: hsl(215, 51%, 70%);
+  border-bottom: none;
+  width: 90%;
+  margin: 35px auto 20px;
+}
+
+.creation-boarder {
+  /* float: left; */
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  text-align: left;
+}
+
+.avatar-icon {
+  vertical-align: -10px;
+  width: 35px;
+  margin-right: 15px;
+  box-shadow: 0 0 0 1px #fff;
+  border-radius: 30px;
+}
+
+.creation-text {
+  vertical-align: 1px;
+}
+
+.jules-wyvern {
+  color: #fff;
+}
+
+.jules-wyvern:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width:500px) {
+  body{
+    margin: 4em 1em;
+  }
+.card {
+  float: none;
+  color: #000;
+  width: 90%;
+  height: 45em;
+  margin: auto;
+}
+
+.image-equilibrium {
+  width: 100%;
+}
+
+.eye-icon {
+  width: 100%;
+}
+
+.image__overlay {
+  width: 90%;
+  height: 94%;
+  margin-left: 23px
+}
+
+}
